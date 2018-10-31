@@ -15,6 +15,10 @@ namespace snake
 
         }
 
+        public Point Clone()
+        {
+            return new Point(x, y, sim);
+        }
 
         public void Draw()
         {
