@@ -8,11 +8,14 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1,3,'*');
-            p1.Draw();
-
-            HorizontalLine line = new HorizontalLine(1, 10, 5, '+');
-            line.Drow();
+            HorizontalLine upline = new HorizontalLine(0, 75, 0, '+');
+            upline.Drow();
+            HorizontalLine downline = new HorizontalLine(0, 75, 20, '+');
+            downline.Drow();
+            VerticalLine leftline = new VerticalLine(0, 20, 0, '+');
+            leftline.Drow();
+            VerticalLine rightline = new VerticalLine(0, 20, 75, '+');
+            rightline.Drow();
         }
     }
 }
